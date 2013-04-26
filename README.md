@@ -1,4 +1,4 @@
-# igalarzab does dotfiles
+# jleivaizq does dotfiles
 
 This repository and this README is based in the original dotfiles promoted by
 [@holman](http://github.com/holman).
@@ -21,7 +21,7 @@ holman](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ## Install
 
-- `git clone git://github.com/igalarzab/dotfiles ~/.dotfiles`
+- `git clone git://github.com/jleivaizq/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `git submodule init`
 - `git submodule update`
