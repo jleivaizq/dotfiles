@@ -40,3 +40,6 @@ if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
 fi
+
+# Disable all corrections
+unsetopt correct

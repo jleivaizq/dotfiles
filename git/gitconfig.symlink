@@ -2,10 +2,10 @@
 [user]
     name         = Jose Ignacio Galarza
     email        = igalarzab@gmail.com
-    signingkey   = 9B2489CA
+#    signingkey   = 9B2489CA
     helper       = osxkeychain
 [github]
-    user         = igalarzab
+    user         = jleivaizq
 [core]
     excludesfile = ~/.gitignore
     editor       = vim
@@ -72,5 +72,3 @@
     autocorrect = 0
 [hub]
     protocol = https
-[push]
-    default = simple

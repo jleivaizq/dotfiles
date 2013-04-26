@@ -3,3 +3,8 @@
 *~
 *.sw[o|p]
 *.rbc
+.idea
+stacktrace.log
+*.iml
+*.tgz
+*.iws

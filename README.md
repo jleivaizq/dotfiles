@@ -62,6 +62,7 @@ something if I forget to make a check for a dependency.
 
 ## Thanks
 
+- [Jose Ignacio Galarza dotfiles](http://github.com/igalarzab/dotfiles)
 - [Zach Holman dotfiles](http://github.com/holman/dotfiles)
 - [Ryan Bates dotfiles](http://github.com/ryanb/dotfiles)
 
