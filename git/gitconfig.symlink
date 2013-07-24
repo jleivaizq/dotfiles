@@ -1,7 +1,7 @@
 # Sample gitconfig
 [user]
-    name         = Jose Ignacio Galarza
-    email        = igalarzab@gmail.com
+    name         = Jose Antonio Leiva Izquierdo 
+    email        = jleivaizq@gmail.com 
 #    signingkey   = 9B2489CA
     helper       = osxkeychain
 [github]
