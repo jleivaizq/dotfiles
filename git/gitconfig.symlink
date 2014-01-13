@@ -1,7 +1,7 @@
 # Sample gitconfig
 [user]
     name         = Jose Antonio Leiva Izquierdo
-    email        = jleivaizq@gmail.com
+	email = jleivaizq@tmt.info
 #    signingkey   = 9B2489CA
     helper       = osxkeychain
 [github]
@@ -9,6 +9,7 @@
 [core]
     excludesfile = ~/.gitignore
     editor       = vim
+	autocrlf = input
 [alias]
     co       = checkout
     st       = status -s
@@ -72,3 +73,5 @@
     autocorrect = 0
 [hub]
     protocol = https
+[push]
+	default = current

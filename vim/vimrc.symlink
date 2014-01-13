@@ -138,3 +138,5 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 
+filetype plugin indent on
+syntax on
