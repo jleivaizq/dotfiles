@@ -2,9 +2,6 @@
 #
 # Bootstrap script
 # ===========================================
-#
-#  Jose Ignacio Galarza <igalarzab@gmail.com>
-#
 
 import glob
 import os
