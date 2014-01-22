@@ -118,12 +118,12 @@ colorscheme solarized
 " ---------------------------------------------------------------------------
 
 " Highlight whitespaces with a red background
-set list
-set listchars=tab:>.,extends:#,nbsp:.
-if has("syntax") || has("gui_running")
-    highlight WhitespaceEOL ctermbg=red guibg=red
-    match WhitespaceEOL /\s\+$/
-endif
+"set list
+"set listchars=tab:>.,extends:#,nbsp:.
+"if has("syntax") || has("gui_running")
+"    highlight WhitespaceEOL ctermbg=red guibg=red
+"    match WhitespaceEOL /\s\+$/
+"endif
 
 " Go to the last line visited when reopen a file
 if has("autocmd")
@@ -138,5 +138,10 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 
-filetype plugin indent on
-syntax on
+
+"This highlights the background in a subtle red for text that goes over the 80
+"column limit
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
+set mouse=a
