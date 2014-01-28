@@ -64,7 +64,7 @@
 [apply]
     whitespace = nowarn
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 [mergetool]
     keepBackup = false
 [branch]
@@ -75,3 +75,5 @@
     protocol = https
 [push]
 	default = current
+[diff]
+	tool = vimdiff
