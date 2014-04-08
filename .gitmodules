@@ -10,12 +10,6 @@
 [submodule "vim/vim.symlink/bundle/tlib_vim.git"]
 	path = vim/vim.symlink/bundle/tlib_vim.git
 	url = git://github.com/tomtom/tlib_vim.git
-[submodule "vim/vim.symlink/bundle/salt-vim.git"]
-	path = vim/vim.symlink/bundle/salt-vim.git
-	url = git://github.com/saltstack/salt-vim.git
-[submodule "vim/vim.symlink/bundle/vim-less.git"]
-	path = vim/vim.symlink/bundle/vim-less.git
-	url = git://github.com/groenewege/vim-less.git
 [submodule "vim/vim.symlink/bundle/supertab.git"]
 	path = vim/vim.symlink/bundle/supertab.git
 	url = git://github.com/ervandew/supertab.git
@@ -32,9 +26,6 @@
 [submodule "zsh/ohmyzsh.git"]
 	path = zsh/ohmyzsh.git
 	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/vim.symlink/bundle/vim-scala.git"]
-	path = vim/vim.symlink/bundle/vim-scala.git
-	url = git://github.com/derekwyatt/vim-scala.git
 [submodule "vim/vim.symlink/bundle/nerdtree"]
 	path = vim/vim.symlink/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -56,3 +47,6 @@
 [submodule "vim/vim.symlink/bundle/ctrlp.vim"]
 	path = vim/vim.symlink/bundle/ctrlp.vim
 	url = git@github.com:kien/ctrlp.vim.git
+[submodule "vim/vim.symlink/bundle/jedi-vim"]
+	path = vim/vim.symlink/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
