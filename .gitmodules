@@ -44,9 +44,6 @@
 [submodule "vim/vim.symlink/bundle/python-mode.git"]
 	path = vim/vim.symlink/bundle/python-mode.git
 	url = https://github.com/klen/python-mode.git
-[submodule "vim/vim.symlink/bundle/python-mode"]
-	path = vim/vim.symlink/bundle/python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "vim/vim.symlink/bundle/riv.vim"]
 	path = vim/vim.symlink/bundle/riv.vim
 	url = https://github.com/Rykka/riv.vim.git
