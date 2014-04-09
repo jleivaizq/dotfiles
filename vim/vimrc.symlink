@@ -59,7 +59,7 @@ set showmode                    " Show actual status
 set showcmd                     " Show commands
 set ruler                       " Show position info
 set laststatus=2                " Show the status line always
-set ch=2                        " Command line height
+set ch=1                        " Command line height
 set backspace=2                 " Backspacing over everything in insert mode
 set whichwrap+=<,>,h,l,[,]      " Backspace and cursor keys wrap to
 set shortmess=filtIoOA          " Shorten messages
@@ -171,15 +171,18 @@ let g:airline#extensions#branch#enabled = 1
 " ---------------------------------------------------------------------------
 " syntastic
 " ---------------------------------------------------------------------------
-"let g:syntastic_warning_symbol = 'WW'
-"let g:syntastic_error_symbol = 'EE'
+let g:syntastic_warning_symbol = 'WW'
+let g:syntastic_error_symbol = 'EE'
 
-"let g:syntastic_mode_map = { 'mode': 'active',
-"                           \ 'active_filetypes': ['python', 'javascript'],
-"                           \ 'passive_filetypes': ['html'] }
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['python', 'javascript'],
+                           \ 'passive_filetypes': ['html'] }
  
 " python syntax checking
 let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
-"let g:syntastic_python_flake8_args = '--ignore="E501,E302,E261,E701,E241,E126,E127,E128,W801"'
 
+" ---------------------------------------------------------------------------
+" Bbye
+" ---------------------------------------------------------------------------
+:nnoremap <Leader>q :Bdelete<CR>
 
