@@ -103,6 +103,8 @@ let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
+" Remove all trailing spaces
+autocmd BufWritePre * :%s/\s\+$//e
 
 " ---------------------------------------------------------------------------
 "  Functions
@@ -186,3 +188,7 @@ let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
 " ---------------------------------------------------------------------------
 :nnoremap <Leader>q :Bdelete<CR>
 
+" ---------------------------------------------------------------------------
+" Coffeescript
+" ---------------------------------------------------------------------------
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab

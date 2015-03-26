@@ -41,7 +41,7 @@ fi
 # Disable all corrections
 unsetopt correct
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:/usr/local/mysql/bin:/usr/lib/grails/grails-2.4.4/bin # Add RVM to PATH for scripting
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
