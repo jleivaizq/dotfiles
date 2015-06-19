@@ -140,12 +140,12 @@ match OverLength /\%101v.\+/
 set mouse=a
 
 " ---------------------------------------------------------------------------
-" Nerdtree 
+" Nerdtree
 " ---------------------------------------------------------------------------
 nnoremap <F1> :NERDTreeToggle<cr>
 
 " ---------------------------------------------------------------------------
-" vim-jedi 
+" vim-jedi
 " ---------------------------------------------------------------------------
 
 " Do use splits not buffers
@@ -164,7 +164,7 @@ let g:jedi#rename_command = "<leader>r"
 let g:jedi#show_call_signatures = "1"
 
 " ---------------------------------------------------------------------------
-" vim-airline 
+" vim-airline
 " ---------------------------------------------------------------------------
 let g:airline_left_sep = '⮀'
 let g:airline_right_sep = ''
@@ -179,7 +179,7 @@ let g:syntastic_error_symbol = 'EE'
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': ['python', 'javascript'],
                            \ 'passive_filetypes': ['html'] }
- 
+
 " python syntax checking
 let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
 
@@ -192,3 +192,9 @@ let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
 " Coffeescript
 " ---------------------------------------------------------------------------
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+" ---------------------------------------------------------------------------
+" Minibuffer explorer
+" ---------------------------------------------------------------------------
+:nnoremap <C-j> :MBEbp<CR>
+:nnoremap <C-k> :MBEbn<CR>

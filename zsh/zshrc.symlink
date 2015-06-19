@@ -45,3 +45,4 @@ PATH=$PATH:$HOME/.rvm/bin:/usr/local/mysql/bin:/usr/lib/grails/grails-2.4.4/bin 
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
