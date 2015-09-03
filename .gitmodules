@@ -35,3 +35,9 @@
 [submodule "vim/vim.symlink/bundle/vim-coffee-script"]
 	path = vim/vim.symlink/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script
+[submodule "vim/vim.symlink/bundle/vim-expand-region.git"]
+	path = vim/vim.symlink/bundle/vim-expand-region.git
+	url = https://github.com/terryma/vim-expand-region.git
+[submodule "vim/vim.symlink/bundle/commentary.vim"]
+	path = vim/vim.symlink/bundle/commentary.vim
+	url = https://github.com/tpope/vim-commentary.git
