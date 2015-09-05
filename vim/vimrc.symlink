@@ -144,6 +144,10 @@ set mouse=a
 " ---------------------------------------------------------------------------
 nnoremap <leader>t :NERDTreeToggle<cr>
 
+" Open nerdtree if just 'vim' is executed
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " ---------------------------------------------------------------------------
 " vim-airline
 " ---------------------------------------------------------------------------
