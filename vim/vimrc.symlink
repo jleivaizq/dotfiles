@@ -240,3 +240,12 @@ omap s :normal vs<CR>
 nnoremap <Leader>1 :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <Leader>2 :exe "resize " . (winheight(0) * 2/3)<CR>
 
+
+" ---------------------------------------------------------------------------
+" Useful stuff
+" ---------------------------------------------------------------------------
+
+" Stop highlighting search terms
+nnoremap <Leader>t :noh<CR><CR>
+
+
