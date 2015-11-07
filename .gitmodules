@@ -41,3 +41,15 @@
 [submodule "vim/vim.symlink/bundle/commentary.vim"]
 	path = vim/vim.symlink/bundle/commentary.vim
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/vim.symlink/bundle/vim-geeknote"]
+	path = vim/vim.symlink/bundle/vim-geeknote
+	url = https://github.com/neilagabriel/vim-geeknote
+[submodule "vim/vim.symlink/bundle/vim-notes.git"]
+	path = vim/vim.symlink/bundle/vim-notes.git
+	url = https://github.com/xolox/vim-notes.git
+[submodule "vim/vim.symlink/bundle/vim-misc.git"]
+	path = vim/vim.symlink/bundle/vim-misc.git
+	url = https://github.com/xolox/vim-misc.git
+[submodule "vim/vim.symlink/bundle/targets.vim"]
+	path = vim/vim.symlink/bundle/targets.vim
+	url = https://github.com/wellle/targets.vim.git
