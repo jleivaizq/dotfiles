@@ -30,7 +30,7 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " General
 set nocompatible                " vi != vim
-let mapleader="\<Space>"        " Lead with <Space>
+let mapleader=","        " Lead with ,
 
 " Format settings
 set nowrap                      " No wrap lines
@@ -134,15 +134,15 @@ endfunction
 
 "This highlights the background in a subtle red for text that goes over the 80
 "column limit
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%101v.\+/
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%101v.\+/
 
 set mouse=a
 
 " ---------------------------------------------------------------------------
 " Nerdtree
 " ---------------------------------------------------------------------------
-nnoremap <leader>t :NERDTreeToggle<cr>
+nnoremap <Leader>tt :NERDTreeToggle<cr>
 
 " Open nerdtree if just 'vim' is executed
 autocmd StdinReadPre * let s:std_in=1
@@ -248,4 +248,12 @@ nnoremap <Leader>2 :exe "resize " . (winheight(0) * 2/3)<CR>
 " Stop highlighting search terms
 nnoremap <Leader>t :noh<CR><CR>
 
+" Set zsh as a default shell
+" otherwise, syntastic is giving some errors
+set shell=/bin/zsh
 
+" Integration with iTerm2 clipboard
+set clipboard=unnamed
+
+" Notes management
+:let g:notes_directories = ['~/Documents/Notes']
