@@ -1,2 +1,49 @@
+# Defualt shell
 set-option -g default-shell /bin/zsh
 
+# Enlarge delays for interfering with cim
+set -g prefix C-a
+
+# Send prefix to other apps
+bind C-a send-prefix
+
+# Shortcut for spliting vertically
+bind | split-window -h
+
+# Shortcut for splitting horizontally
+bind - split-window -v
+
+# Windows starts at 1
+set -g base-index 1
+
+# Panes starts at 1 inside windows
+setw -g pane-base-index 1
+
+# Reload configuration
+bind r source-file ~/.tmux.conf
+
+# Remmaping movement keys
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Shourtcut to cycle through windows
+bind -r C-h select-window -t :-
+bind -r C-l select-window -t :+
+
+# Resizing panes
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
+# Handling the mouse
+setw -g mode-mouse on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+set -g mouse-select-window on
+
+# Colors
+set -g status-fg white
+set -g status-bg black
