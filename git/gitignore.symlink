@@ -1,5 +1,6 @@
 .DS_Store
 .svn
+.idea
 *~
 *.sw[o|p]
 *.rbc
@@ -8,3 +9,5 @@ stacktrace.log
 *.iml
 *.tgz
 *.iws
+bin/
+.project

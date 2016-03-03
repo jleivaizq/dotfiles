@@ -1,15 +1,16 @@
 # Sample gitconfig
 [user]
-    name         = Jose Antonio Leiva Izquierdo
-	email = jleivaizq@smartvel.com
-#    signingkey   = 9B2489CA
-    helper       = osxkeychain
+	name = Jose A. Leiva
+	email = jleivaizq@gmail.com
+    helper = osxkeychain
 [github]
-    user         = jleivaizq
+    user = jleivaizq
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
     editor       = vim
 	autocrlf = input
+	fileMode = false
+	pager = less -FMRiX
 [alias]
     co       = checkout
     st       = status -s
@@ -38,6 +39,7 @@
     filelog  = log -u
     ls       = !$HOME/.dotfiles/git/functions/git-ls
     ll       = !$HOME/.dotfiles/git/functions/git-ll
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
 [color]
     ui     = true
     diff   = auto

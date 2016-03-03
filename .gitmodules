@@ -1,19 +1,19 @@
 [submodule "vim/vim.symlink/bundle/vim-colors-solarized.git"]
 	path = vim/vim.symlink/bundle/vim-colors-solarized.git
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/vim.symlink/bundle/syntastic.git"]
 	path = vim/vim.symlink/bundle/syntastic.git
-	url = git://github.com/scrooloose/syntastic.git
+	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/vim.symlink/bundle/fugitive.git"]
 	path = vim/vim.symlink/bundle/fugitive.git
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/vim.symlink/bundle/minibufexpl.git"]
 	path = vim/vim.symlink/bundle/minibufexpl.git
-	url = git://github.com/fholgado/minibufexpl.vim.git
+	url = https://github.com/fholgado/minibufexpl.vim.git
 	ignore = dirty
 [submodule "zsh/ohmyzsh.git"]
 	path = zsh/ohmyzsh.git
-	url = git://github.com/robbyrussell/oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "vim/vim.symlink/bundle/nerdtree"]
 	path = vim/vim.symlink/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
@@ -25,13 +25,13 @@
 	url = https://github.com/Rykka/riv.vim.git
 [submodule "vim/vim.symlink/bundle/ctrlp.vim"]
 	path = vim/vim.symlink/bundle/ctrlp.vim
-	url = git@github.com:kien/ctrlp.vim.git
+	url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/vim.symlink/bundle/vim-airline"]
-	path = vim/vim.symlink/bundle/vim-airline
-	url = https://github.com/bling/vim-airline
+    path = vim/vim.symlink/bundle/vim-airline
+    url = https://github.com/bling/vim-airline
 [submodule "vim/vim.symlink/bundle/vim-bbye"]
 	path = vim/vim.symlink/bundle/vim-bbye
-	url = git@github.com:moll/vim-bbye.git
+	url = https://github.com/moll/vim-bbye.git
 [submodule "vim/vim.symlink/bundle/vim-coffee-script"]
 	path = vim/vim.symlink/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script
@@ -53,3 +53,6 @@
 [submodule "vim/vim.symlink/bundle/targets.vim"]
 	path = vim/vim.symlink/bundle/targets.vim
 	url = https://github.com/wellle/targets.vim.git
+[submodule "vim/vim.symlink/bundle/unite.vim"]
+	path = vim/vim.symlink/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim.git
