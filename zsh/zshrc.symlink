@@ -11,7 +11,7 @@ export PROJECTS=~/Code/s
 ZSH_CUSTOM=$DOTFILES/zsh/custom/
 
 # Set name of the theme to load.
-ZSH_THEME="agnoster"
+ZSH_THEME="clean"
 
 # Comment this out to disable bi-weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
@@ -41,11 +41,9 @@ fi
 # Disable all corrections
 unsetopt correct
 
-PATH=$PATH:$HOME/.rvm/bin:/usr/local/mysql/bin:/usr/lib/grails/grails-2.4.4/bin # Add RVM to PATH for scripting
+TOOLS=/opt/local/scala/latest/bin
+PATH=$PATH:$TOOLS
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/jleivaizq/.gvm/bin/gvm-init.sh" ]] && source "/Users/jleivaizq/.gvm/bin/gvm-init.sh"
