@@ -39,10 +39,8 @@ bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
 
 # Handling the mouse
-setw -g mode-mouse on
-set -g mouse-select-pane on
-set -g mouse-resize-pane on
-set -g mouse-select-window on
+set -g mouse-utf8 on
+set -g mouse on
 
 # Colors
 set -g status-fg black
