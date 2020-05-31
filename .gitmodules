@@ -56,3 +56,7 @@
 [submodule "vim/vim.symlink/bundle/unite.vim"]
 	path = vim/vim.symlink/bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim.git
+[submodule "vim/vim.symlink/bundle/vimwiki.git"]
+    path =  vim/vim.symlink/bundle/vimwiki
+    url = https://github.com/vimwiki/vimwiki.git
+
