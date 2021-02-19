@@ -174,50 +174,10 @@ let g:syntastic_python_checkers = ['pep8', 'pylint', 'python']
 :nnoremap <leader>x :Bdelete<CR>
 
 " ---------------------------------------------------------------------------
-" Coffeescript
-" ---------------------------------------------------------------------------
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-
-" ---------------------------------------------------------------------------
 " Minibuffer explorer
 " ---------------------------------------------------------------------------
 :nnoremap <C-j> :MBEbp<CR>
 :nnoremap <C-k> :MBEbn<CR>
-
-" ---------------------------------------------------------------------------
-" vim-expand-region
-" ---------------------------------------------------------------------------
-
-" i] Support nesting of square brackets
-" ib Support nesting of parentheses
-" iB Support nesting of braces
-" il 'inside line'. Available through https://github.com/kana/vim-textobj-line
-" ip
-" ie 'entire file'. Available through https://github.com/kana/vim-textobj-entire
-
-let g:expand_region_text_objects = {
-\ 'iw' :0,
-\ 'iW' :0,
-\ 'i"' :0,
-\ 'i''' :0,
-\ 'i]' :1,
-\ 'ib' :1,
-\ 'iB' :1,
-\ 'il' :0,
-\ 'ip' :0,
-\ 'ie' :0,
-\ }
-
-" Minor remap for a more comfortable use
-" --------------------------------------
-" - Hit v to select one character
-" - Hit vagain to expand selection to word
-" - Hit v again to expand to paragraph
-" - ...
-" - Hit <C-v> go back to previous selection if I went too far
-vmap v <Plug>(expand_region_expand)
-vmap <C-v> <Plug>(expand_region_shrink)
-
 
 " ---------------------------------------------------------------------------
 " Discover text search object
@@ -240,13 +200,12 @@ omap s :normal vs<CR>
 nnoremap <Leader>1 :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <Leader>2 :exe "resize " . (winheight(0) * 2/3)<CR>
 
-
 " ---------------------------------------------------------------------------
 " Useful stuff
 " ---------------------------------------------------------------------------
 
 " Stop highlighting search terms
-nnoremap <Leader>t :noh<CR><CR>
+nnoremap <Leader>tt :noh<CR><CR>
 
 " Set zsh as a default shell
 " otherwise, syntastic is giving some errors
