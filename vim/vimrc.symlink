@@ -98,10 +98,16 @@ filetype indent plugin on
 
 " Syntax highlighting and color scheme (solarized)
 syntax enable
-set t_Co=256
-let g:solarized_termcolors=256
-set background=dark
 colorscheme solarized
+
+" No background color
+highlight Normal ctermbg=NONE
+
+" No highlights on line number
+highlight LineNr ctermbg=NONE
+
+" No highlights on vertical splits
+highlight VertSplit ctermbg=NONE guibg=NONE
 
 " Remove all trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
@@ -151,13 +157,14 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " ---------------------------------------------------------------------------
 " vim-airline
 " ---------------------------------------------------------------------------
-let g:airline_left_sep = '⮀'
+let g:airline_left_sep = ' '
 let g:airline_right_sep = ''
 let g:airline#extensions#branch#enabled = 1
 
 " ---------------------------------------------------------------------------
 " syntastic
 " ---------------------------------------------------------------------------
+highlight SignColumn ctermbg=NONE
 let g:syntastic_warning_symbol = 'WW'
 let g:syntastic_error_symbol = 'EE'
 

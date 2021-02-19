@@ -17,7 +17,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(brew extract git-extras osx pip python)
+plugins=(django extract git-extras pip python rbenv)
 
 # All ZSH files inside dotfiles
 typeset -U config_files
@@ -38,38 +38,9 @@ fi
 # Disable all corrections
 unsetopt correct
 
-TOOLS=/opt/local/scala/latest/bin
+TOOLS="$HOME/.rvm/bin"
 PATH=$PATH:$TOOLS
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-
-export PATH=$HOME/bin:$HOME/.toolbox/bin:$PATH
-
-
-alias bba='brazil-build apollo-pkg'
-alias bbr='brazil-build release'
-alias bbc='brazil-build clean'
-alias bbcba='bbc && bb && bba'
-alias bbcb='bbc && bb'
-alias bbs='brazil-build server | sed  "s/|/\n |/g"'
-alias bbt='brazil-build test'
-alias bre='brazil-runtime-exec'
-alias brc='brazil-recursive-cmd'
-alias bws='brazil ws'
-alias bwsuse='bws use --gitMode -p'
-alias bwscreate='bws create -n'
-alias brcb='brc brazil-build'
-alias brcall='brc --allPackages'
-alias bbab='brc --allPackages brazil-build'
-alias bbra='bbr apollo-pkg'
-alias bb32='BRAZIL_PLATFORM_OVERRIDE=RHEL5 brazil-build'
-alias brazil-octane='/apollo/env/OctaneBrazilTools/bin/brazil-octane'
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/josli/.sdkman"
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
