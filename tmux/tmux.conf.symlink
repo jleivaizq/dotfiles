@@ -39,7 +39,6 @@ bind -r K resize-pane -U 5
 bind -r L resize-pane -R 5
 
 # Handling the mouse
-set -g mouse-utf8 on
 set -g mouse on
 
 # Colors
@@ -49,5 +48,5 @@ set -g status-bg green
 # Notifications
 set -g status-interval 61
 setw -g monitor-activity on
-set -g visual-activity on”
+set -g visual-activity on
 
