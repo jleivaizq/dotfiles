@@ -169,7 +169,7 @@ let g:syntastic_warning_symbol = 'WW'
 let g:syntastic_error_symbol = 'EE'
 
 let g:syntastic_mode_map = { 'mode': 'active',
-                           \ 'active_filetypes': ['python', 'javascript'],
+                           \ 'active_filetypes': ['python', 'ruby', 'javascript'],
                            \ 'passive_filetypes': ['html'] }
 
 " python syntax checking
@@ -223,3 +223,9 @@ set clipboard=unnamed
 
 " Notes management
 :let g:notes_directories = ['~/Documents/Notes']
+
+" ---------------------------------------------------------------------------
+" Syntax highlighting tweaks
+" ---------------------------------------------------------------------------
+
+highlight rubyDefine ctermfg=grey ctermbg=NONE

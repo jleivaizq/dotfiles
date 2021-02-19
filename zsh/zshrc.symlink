@@ -39,7 +39,7 @@ fi
 unsetopt correct
 
 TOOLS="$HOME/.rvm/bin"
-PATH=$PATH:$TOOLS
+PATH=/usr/local/bin:$PATH:$TOOLS
 
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh

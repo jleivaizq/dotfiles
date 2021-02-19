@@ -26,3 +26,9 @@
 [submodule "vim/vim.symlink/bundle/vim-bbye"]
 	path = vim/vim.symlink/bundle/vim-bbye
 	url = https://github.com/moll/vim-bbye.git
+[submodule "vim/vim.symlink/bundle/vim-ruby-debugger"]
+	path = vim/vim.symlink/bundle/vim-ruby-debugger
+	url = https://github.com/astashov/vim-ruby-debugger
+[submodule "vim/vim.symlink/bundle/vim-ruby"]
+	path = vim/vim.symlink/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
