@@ -44,3 +44,6 @@ PATH=/usr/local/bin:$PATH:$TOOLS
 # Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Points vim to macvim for OSX (remove on Linux)
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+
