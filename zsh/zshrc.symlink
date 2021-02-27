@@ -8,7 +8,7 @@ export ZSH=$DOTFILES/zsh/ohmyzsh.git
 ZSH_CUSTOM=$DOTFILES/zsh/custom/
 
 # Set name of the theme to load.
-ZSH_THEME="clean"
+ZSH_THEME="eastwood"
 
 # Comment this out to disable bi-weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
@@ -17,7 +17,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins to load (custom plugins may be added to ~/.oh-my-zsh/custom/plugins/)
-plugins=(django extract git-extras pip python rbenv)
+plugins=(brew extract git-extras pip python rvm ruby bundler)
 
 # All ZSH files inside dotfiles
 typeset -U config_files
