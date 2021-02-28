@@ -148,7 +148,7 @@ set mouse=a
 " ---------------------------------------------------------------------------
 " Nerdtree
 " ---------------------------------------------------------------------------
-nnoremap <Leader>tt :NERDTreeToggle<cr>
+nnoremap <Leader>nt :NERDTreeToggle<cr>
 
 " Open nerdtree if just 'vim' is executed
 autocmd StdinReadPre * let s:std_in=1
