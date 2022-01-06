@@ -79,3 +79,5 @@
 	default = current
 [diff]
 	tool = vimdiff
+[pull]
+	rebase = true
