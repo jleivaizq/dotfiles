@@ -21,7 +21,7 @@ holman](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 
 ## Install
 
-- `git clone git://github.com/jleivaizq/dotfiles ~/.dotfiles`
+- `git clone https://github.com/jleivaizq/dotfiles.git ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `git submodule init`
 - `git submodule update`
