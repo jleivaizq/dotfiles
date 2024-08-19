@@ -4,7 +4,7 @@
 base_directory="."
 
 # Target directory for stow to deploy configuration (home by default)
-taret_directory="~/"
+target_directory="$HOME"
 
 # Leverage the same file stow uses to filter the packages to install
 ignore_list_file=".stow-global-ignore"
@@ -89,7 +89,8 @@ find "$base_directory" -maxdepth 1 -type d | while read -r dir; do
        log "[Dryrun] No install script found under $dir. Assuming manual installation"
    fi
    log "[Dryrun] Stowing $dir"
-   stow -n -d $base_directory -t $target_directory "$dir" -v 
+   log "[Dryrun] Execution - stow -n -d $base_directory -t $target_directory "$dir" -v"
+   stow -n "$dir" -d $base_directory -t $target_directory -v 
   else
    if [ -f "$dir/install.sh" ]; then
        log "Running install.sh script inside $dir"
@@ -97,7 +98,7 @@ find "$base_directory" -maxdepth 1 -type d | while read -r dir; do
     else
        log "No install script found under $dir. Assuming manual installation"
    fi
-   stow -d $base_directory -t $target_directory "$dir" -v 
+   stow "$dir" -d $base_directory -t $target_directory -v 
   fi 
 
 done
