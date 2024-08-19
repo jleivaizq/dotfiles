@@ -1,0 +1,11 @@
+scripts
+install.sh
+
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
