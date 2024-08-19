@@ -17,6 +17,7 @@ return {
 			{ "<leader>e", group = "Explorer", icon = { icon = "󰪶", color = "cyan" } },
 			{ "<leader>f", group = "Telescope" },
 			{ "<leader>g", group = "Git" },
+			{ "<leader>h", group = "ChatGPT", icon = { icon = "󱉟", color = "cyan" } },
 			{ "<leader>o", group = "Obsidian", icon = { icon = "󰠮", color = "cyan" } },
 			{ "<leader>s", group = "Split", icon = { icon = "", color = "cyan" } },
 			{ "<leader>t", group = "Tabs" },
