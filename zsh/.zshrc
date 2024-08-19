@@ -12,7 +12,7 @@ PATH=/usr/local/bin:$PATH:$TOOLS
 
 # All ZSH files inside dotfiles/zsh
 typeset -U config_files
-config_files=($DOTFILES/*/*.zsh)
+config_files=($DOTFILES/**/*.zsh)
 
 # Load config files
 for file in ${config_files}
