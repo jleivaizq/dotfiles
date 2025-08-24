@@ -19,3 +19,11 @@ for file in ${config_files}
 do
   source $file
 done
+
+# asdf setup for tool versioning
+source /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# Clear the screen
+alias cl="clear"
+
+alias drun="devcontainer exec --workspace-folder . "
