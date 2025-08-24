@@ -20,6 +20,8 @@ do
   source $file
 done
 
+bindkey -e
+
 # asdf setup for tool versioning
 source /opt/homebrew/opt/asdf/libexec/asdf.sh
 
