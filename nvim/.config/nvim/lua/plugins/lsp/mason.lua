@@ -31,7 +31,9 @@ return {
 				"cssls",
 				"tailwindcss",
 				"lua_ls",
-				"pyright",
+				"ruby_lsp",
+				"rubocop",
+				-- "pyright",
 			},
 		})
 
@@ -39,10 +41,12 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"isort", -- python formatter
-				"black", -- python formatter
-				"pylint",
+				-- "isort", -- python formatter
+				-- "black", -- python formatter
+				-- "pylint",
 				"eslint_d",
+				"ruby_lsp",
+				"rubocop",
 			},
 		})
 	end,
