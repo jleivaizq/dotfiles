@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "neovim": {
+      "command": "node",
+      "args": ["@bigcodegen/mcp-neovim-server"] // o ruta local si lo instalas global
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": { "Authorization": "Bearer ${GITHUB_TOKEN}" }
+    }
+  }
+}
